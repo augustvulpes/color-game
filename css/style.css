@@ -1,0 +1,120 @@
+@font-face {
+	font-family: Nunito;
+	src: url(../fonts/Nunito.ttf);
+}
+
+/*Animation for GitHub link*/
+@keyframes rainbow {
+	0% {
+		color: #FF0000FF;
+	}
+	15% {
+		color: #FF7F00FF;
+	}
+	30% {
+		color: #FFFF00FF;
+	}
+	45% {
+		color: #00BC3EFF;
+	}
+	55% {
+		color: #0068FFFF;
+	}
+	70% {
+		color: #7A00E5FF;
+	}
+	85% {
+		color: #D300C9FF;
+	}
+	to {
+		color: #FF0000FF;
+	}
+}
+
+body {
+	font-family: Nunito, sans-serif;
+	background-color: #383838FF;
+}
+
+header {
+	background-color: #2D85D1FF;
+	color: white;
+}
+
+header h1 {
+	font-weight: bold;
+}
+
+button {
+	transition: 0.5s;
+}
+
+.right {
+	color: #14CC42FF;
+}
+
+.wrong {
+	color: #F1171EFF;
+}
+
+.circle {
+	transition: 0.5s;
+	width: 200px;
+	height: 200px;
+	background-color: #ffffff;
+	border: 2px solid white;
+	border-radius: 100%;
+}
+
+.circle:hover {
+	transform: scale(1.2);
+}
+
+.menu-bar {
+	transition: 1s;
+	background-color: #ffffff;
+}
+
+.menu-bar button {
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: #2D85D1FF;
+	background: #ffffff;
+	border: none;
+}
+
+button:active,
+button:focus {
+	outline: none;
+}
+
+.menu-bar .selected,
+.menu-bar button:hover {
+	background-color: #2D85D1FF;
+	color: #ffffff;
+}
+
+.git-link {
+	animation: rainbow  4s infinite linear;
+	transition: 0.25s;
+	color: #ffffff;
+}
+
+.git-link:hover {
+	text-decoration: none;
+}
+
+@media (max-width: 768px){
+	.circle {
+		width: 110px;
+		height: 110px;
+	}
+
+	header h1 {
+		font-size: 1.75rem;
+	}
+
+	header h2 {
+		font-size: 1.5rem;
+	}
+}

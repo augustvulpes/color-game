@@ -2,4 +2,4 @@
 Simple color guessing game (which I made just for practise)
 
 Feel free to criticize my code, I`am interesting in others opinion about it)
-https://nolonhum.github.io/color-game/
+https://augustvulpes.github.io/color-game/
